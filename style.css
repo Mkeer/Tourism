@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #8e8b8b;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background: #121212;
+    color: #eee;
+    .parallax {
+      background-image: url('images/mysore-palace.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+    }
+    .head{
+      color: #eee;
+    }
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #78173C;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  .logo span {
+    color: #d84315;
+  }
+  
+  #darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .head {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: #5e0113;
+  }
+  
+  
+  .head-content h1 {
+    font-size: 3rem;
+  }
+  
+  .head-content p {
+    font-size: x-large;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #9f1b14;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-size: x-large;
+  }
+  
+  .btn:hover {
+    background: #bf360c;
+  }
+  
+  /* Destinations */
+  .destinations {
+    padding: 50px 10%;
+  }
+  
+  .destinations h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .bento {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .card {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  body.dark-mode .card {
+    background: #1e1e1e;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #fa9601;
+    margin-top: 30px;
+  }
+  
+  /* Animation */
+  @media (prefers-reduced-motion: no-preference) {
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s, opacity 0.8s;
+    }
+  }
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .parallax {
+    background-image: url('images/Mysore.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  #explore {
+    display: block;
+    min-height: 100vh;
+    padding-top: 50px; /* Prevent overlap with nav */
+}
+
+      
