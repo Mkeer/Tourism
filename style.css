@@ -159,7 +159,7 @@ body {
     border-radius: 10px;
   }
   .card {
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -224,5 +224,4 @@ body {
 .experience-card p {
   color: #6b7280;
 }
-
       
