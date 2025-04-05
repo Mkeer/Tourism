@@ -24,6 +24,20 @@ body {
     .head{
       color: #eee;
     }
+    .experiences {
+      padding: 5rem 0;
+      background-color: #0b0b0b;
+    }
+    .experience-icon {
+      display: inline-flex;
+      padding: 1rem;
+      background-color: #0455f7;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+    .experience-card p {
+      color: #a7a7a9;
+    }
   }
   
   /* Navbar */
@@ -142,7 +156,7 @@ body {
   footer {
     text-align: center;
     padding: 15px;
-    background: #fa9601;
+    background: #f6a01f;
     margin-top: 30px;
   }
   
